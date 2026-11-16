@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="YourNamespace" constructor="YourControlName" version="1.0.0"
+    display-name-key="YourControlName_Display_Key" description-key="YourControlName_Desc_Key"
+    control-type="standard">
+
+    <!-- Properties -->
+    <property name="sampleProperty" display-name-key="sampleProperty_Display_Key"
+      description-key="sampleProperty_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="PageName" display-name-key="PageName_Display_Key"
+      description-key="PageName_Desc_Key" of-type="SingleLine.Text" usage="input" required="false" />
+
+    <!-- Standard license: no external service usage -->
+    <external-service-usage enabled="false" />
+
+    <!-- Device features (declare only if used) -->
+    <feature-usage>
+      <!-- <uses-feature name="Device.captureImage" required="true" /> -->
+      <!-- <uses-feature name="Device.getBarcodeValue" required="true" /> -->
+      <!-- <uses-feature name="Device.getCurrentPosition" required="true" /> -->
+      <!-- <uses-feature name="Device.pickFile" required="true" /> -->
+    </feature-usage>
+
+    <resources>
+      <code path="index.js" order="1" />
+      <css path="css/YourControlName.css" order="1" />
+    </resources>
+  </control>
+</manifest>
